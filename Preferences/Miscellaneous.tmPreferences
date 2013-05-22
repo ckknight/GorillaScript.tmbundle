@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Miscellaneous</string>
 	<key>scope</key>
-	<string>scope.gorilla</string>
+	<string>source.gorilla</string>
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
