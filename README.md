@@ -7,7 +7,6 @@ A *[GorillaScript](http://ckknight.github.io/gorillascript/) syntax bundle* for 
 
 ### TextMate 2 *(Recommended)*
 
-Open Preferences, in the Bundles tab, check *SCSS* to automatically install the bundle.
 1. Make a **new bundles folder** `mkdir -p ~/Library/Application\ Support/Avian/Bundles`
 2. **Open** the new folder `cd ~/Library/Application\ Support/Avian/Bundles`
 3. **Clone** to your new folder `git clone git://github.com/ckknight/GorillaScript.tmbundle.git "GorillaScript.tmbundle"`
