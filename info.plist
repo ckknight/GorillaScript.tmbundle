@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>pxxavtug@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Cameron Knight</string>
+	<key>description</key>
+	<string>Support for &lt;a href="http://ckknight.github.io/gorillascript"&gt;GorillaScript&lt;/a&gt;.</string>
+	<key>name</key>
+	<string>GorillaScript</string>
+	<key>uuid</key>
+	<string>86C19E7B-DB43-4E09-BB3E-656EFCE82994</string>
+</dict>
+</plist>
