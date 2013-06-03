@@ -19,23 +19,33 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>(#)(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.function.gorilla</string>
+					<string>storage.type.function.gorilla</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.function.gorilla</string>
+					<string>punctuation.definition.parameters.begin.gorilla</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>match stuff like: a -&gt; … </string>
-			<key>match</key>
-			<string>#(\([^()]*?\))\s*(-&gt;)?!?@?</string>
+			<key>end</key>
+			<string>(\))[!@\*]*</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.gorilla</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.inline.function.gorilla</string>
 		</dict>
@@ -192,7 +202,9 @@
 			<string>string.backslash.gorilla</string>
 		</dict>
 		<dict>
-			<key>captures</key>
+			<key>begin</key>
+			<string>\b(?&lt;!(?:\.|::|\-))(def|let)\s*([a-zA-Z_$][a-zA-Z0-9_$]*(?:\-[a-zA-Z0-9_$]+)*)\s*(\()</string>
+			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
@@ -207,22 +219,25 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.function.gorilla</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type.function.gorilla</string>
+					<string>punctuation.definition.parameters.begin.gorilla</string>
 				</dict>
 			</dict>
-			<key>match</key>
-			<string>\b(?&lt;!(?:\.|::|\-))(def|let)\s+([a-zA-Z_$][a-zA-Z0-9_$]*(?:\-[a-zA-Z0-9_$]+)*)\s*(\(.*?\))\s*(-&gt;)?</string>
+			<key>end</key>
+			<string>(\))[!@\*]*</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.gorilla</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.function.gorilla.let</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?:label|post-inc|post-dec|typeof|is-(?:array|object|null|void|undefined|string|number|boolean|function)|async|require)!|\b(?&lt;!(?:\.|::|\-))(async(?:if|unless|while|until|for|)|break|case|catch|continue|default|else|fallthrough|finally|for|in|of|to|til|by|from|ofall|if|unless|return(?:ing|if|unless|)|yield|switch|then|throw|try|while|with|repeat|until|let|const|mutable|def|do|macro|(?&lt;=for|while)\s+(?:some|every|first|filter|reduce))(?!-)(?!\s*:)\b</string>
+			<string>\b(?:label|post-inc|post-dec|typeof|is-(?:array|object|null|void|undefined|string|number|boolean|function)|async|require|(?:to-|from-|some-|every-)?promise)!|\b(?&lt;!(?:\.|::|\-))(async(?:if|unless|while|until|for|)|break|case|catch|continue|default|else|fallthrough|finally|for|in|of|to|til|by|from|ofall|if|unless|return(?:ing|if|unless|)|yield|switch|then|throw|try|while|with|repeat|until|let|const|mutable|def|do|macro|promisefor|(?&lt;=for|while)\s+(?:some|every|first|filter|reduce))(?!-)(?!\s*:)\b</string>
 			<key>name</key>
 			<string>keyword.control.gorilla</string>
 		</dict>
