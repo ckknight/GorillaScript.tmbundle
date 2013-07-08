@@ -1,7 +1,7 @@
 GorillaScript.tmbundle
 ======================
 
-A *[GorillaScript](http://ckknight.github.io/gorillascript/) syntax bundle* for [TextMate](https://github.com/textmate/textmate)
+A *[GorillaScript](http://ckknight.github.io/gorillascript/) syntax bundle* for [TextMate](https://github.com/textmate/textmate) and [Sublime Text](http://www.sublimetext.com/)
 
 ## How to Install
 
@@ -11,6 +11,12 @@ A *[GorillaScript](http://ckknight.github.io/gorillascript/) syntax bundle* for 
 2. **Open** the new folder `cd ~/Library/Application\ Support/Avian/Bundles`
 3. **Clone** to your new folder `git clone git://github.com/ckknight/GorillaScript.tmbundle.git "GorillaScript.tmbundle"`
 4. You may need to restart TextMate
+
+### Sublime Text 2
+
+1. **Open** the Sublime Text Packages folder `cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages`
+2. **Clone** to the Packages folder `git clone git://github.com/ckknight/GorillaScript.tmbundle.git "GorillaScript.tmbundle"`
+3. You may need to restart Sublime Text
 
 ### Git with TextMate 1
 
