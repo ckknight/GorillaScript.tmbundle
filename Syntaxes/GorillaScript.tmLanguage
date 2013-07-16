@@ -237,7 +237,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?:label|post-inc|post-dec|typeof|is-(?:array|object|null|void|undefined|string|number|boolean|function)|async|require|(?:to-|from-|some-|every-)?promise)!|\b(?&lt;!(?:\.|::|\-))(async(?:if|unless|while|until|for|)|break|case|catch|continue|default|else|fallthrough|finally|for|in|of|to|til|by|from|ofall|if|unless|return(?:ing|if|unless|)|yield|switch|then|throw|try|while|with|repeat|until|let|const|mutable|def|do|macro|promisefor|(?&lt;=for|while)\s+(?:some|every|first|filter|reduce))(?!-)(?!\s*:)\b</string>
+			<string>\b(?:label|post-inc|post-dec|typeof|is-(?:array|object|null|void|undefined|string|number|boolean|function)|async|require|(?:to-|from-|some-|every-)?promise|to-promise-array)!|\b(?&lt;!(?:\.|::|\-))(async(?:if|unless|while|until|for|)|break|case|catch|continue|default|else|fallthrough|finally|for|in|of|to|til|by|from|ofall|if|unless|return(?:ing|if|unless|)|yield|switch|then|throw|try|while|with|repeat|until|let|const|mutable|def|do|macro|promisefor|(?&lt;=for|while)\s+(?:some|every|first|filter|reduce))(?!-)(?!\s*:)\b</string>
 			<key>name</key>
 			<string>keyword.control.gorilla</string>
 		</dict>
